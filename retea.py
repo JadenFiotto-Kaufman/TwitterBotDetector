@@ -1,4 +1,6 @@
 import tweepy
+from datetime import datetime, timezone
+
 
 consumer_key = 'Yq2nTsdKdK9PJukcuqXV1wNK0'
 consumer_secret = 'T0iFhOH7lpWESscrRm4erUlM9FBiYfdXgoHdZhQqSUSkhzcVnZ'
@@ -10,8 +12,34 @@ authentication = tweepy.OAuthHandler(consumer_key, consumer_secret)
 authentication.set_access_token(access_token, access_token_secret)
 twitterStream = tweepy.Stream(authentication,1)
 
-api = tweepy.API(authentication)
-twitterAPI = api
+TwitterAPI = tweepy.API(authentication)
 
-timeline = twitterAPI.user_timeline("realDonaldTrump", count=200, include_rts=False)
-print([tweet.text for tweet in timeline])
+USER = TwitterAPI.get_user("tomhanks")
+USERjson = USER._json
+
+
+def Meta_Data(USER):
+    MetaData = {}
+    MetaData['screenNameLength'] = len(USER['screen_name'])
+    MetaData['screenNameDigits'] = sum([c.isdigit() for c in USER['screen_name']])
+    MetaData['userNameLength'] = len(USER['name'])
+    MetaData['timeOffset'] = USER['utc_offset']
+    MetaData['defaultProfile'] = USER['default_profile']
+    MetaData['defaultImage'] = USER['default_profile_image']
+    MetaData['profileBackgroundImage'] = USER['profile_use_background_image']
+    MetaData['verified'] = USER['verified']
+    MetaData['protected'] = USER['protected']
+    MetaData['timeOffset'] = USER['utc_offset']
+    date = datetime.strptime(USER['created_at'], '%a %b %d %H:%M:%S %z %Y')
+    age = (datetime.now(timezone.utc) - date).days
+    MetaData['ageDays'] = age
+    MetaData['descriptionLength'] = len(USER['description'])
+    MetaData['favoritesCount'] = USER['favourites_count']
+    MetaData['followersCount'] = USER['followers_count']
+    MetaData['friendsCount'] = USER['friends_count']
+    MetaData['listedCount'] = USER['listed_count']
+    MetaData['geoEnabled'] = USER['geo_enabled']
+    MetaData['language'] = USER['lang']
+
+
+Meta_Data(USERjson)
