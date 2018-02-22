@@ -1,3 +1,4 @@
+var API = "http://localhost:55719/V1/";
 var LoadTimeout;
 var TweetectAction = "<div class=\"ProfileTweet-action--tweetect\">" +
     "<button class=\"\" type=\"button\"><div class=\"IconContainer js-tooltip\" data-original-title=\"TweeTect\"><img class=\"TweetIcon\"></img><span class=\"u-hiddenVisually\">TweeTect</span></div></button>" +
@@ -19,7 +20,7 @@ var TweetectModal = "<div id=\"tweetect-tweet-dialog\" class=\"tweetectDialog mo
     "</div>" +
     "</div>"
 $("#retweet-tweet-dialog").after(TweetectModal);
-function Report(user){
+function Report(user, data){
     var report = "<div class=\"tweetect-report\">"+
     "<h4 style=\"font-size:15px\">Bot report for " + user + ":</h4>"+
     "</div>"
@@ -31,17 +32,17 @@ function Evaluate(ths) {
         "<h4></h4" +
         "</div>"
     $(".modal-body").append(search);   
-    var user = $(ths).parents(".content").first().find(".FullNameGroup strong").first().text()
+    var user = $(ths).parents(".content").first().find(".username b").first().text()
     $("#tweetect-tweet-dialog .tweetect-searching h4").text("Evaluating " + user)
-
-    LoadTimeout = setTimeout(function(){
+    $.get(API + user, function(){}).done(function(data){
         $(".tweetect-searching").remove();
-        Report(user);
-    },5000)
-
+        Report(user, data);
+    });
 }
 $(".ProfileTweet-action--tweetect").click(function () {
     $("#tweetect-tweet-dialog").css("display", "block");
+    var offset = ($(window).width() - $("#tweetect-tweet-dialog-dialog").width()) / 2.0;
+    $("#tweetect-tweet-dialog-dialog").css("left", offset.toString() + "px");
     Evaluate(this);  
    
 })

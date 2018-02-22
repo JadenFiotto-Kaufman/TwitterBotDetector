@@ -1,0 +1,11 @@
+c:\users\jaden\documents\visual studio 2017\Projects\Tweetect\Tweetect\bin\Debug\netcoreapp2.0\Tweetect.deps.json
+c:\users\jaden\documents\visual studio 2017\Projects\Tweetect\Tweetect\bin\Debug\netcoreapp2.0\Tweetect.runtimeconfig.json
+c:\users\jaden\documents\visual studio 2017\Projects\Tweetect\Tweetect\bin\Debug\netcoreapp2.0\Tweetect.runtimeconfig.dev.json
+c:\users\jaden\documents\visual studio 2017\Projects\Tweetect\Tweetect\bin\Debug\netcoreapp2.0\Tweetect.dll
+c:\users\jaden\documents\visual studio 2017\Projects\Tweetect\Tweetect\obj\Debug\netcoreapp2.0\Tweetect.csprojResolveAssemblyReference.cache
+c:\users\jaden\documents\visual studio 2017\Projects\Tweetect\Tweetect\obj\Debug\netcoreapp2.0\Tweetect.csproj.CoreCompileInputs.cache
+c:\users\jaden\documents\visual studio 2017\Projects\Tweetect\Tweetect\obj\Debug\netcoreapp2.0\Tweetect.AssemblyInfoInputs.cache
+c:\users\jaden\documents\visual studio 2017\Projects\Tweetect\Tweetect\obj\Debug\netcoreapp2.0\Tweetect.AssemblyInfo.cs
+C:\Users\Jaden\Documents\Visual Studio 2017\Projects\Tweetect\Tweetect\bin\Debug\netcoreapp2.0\Tweetect.pdb
+C:\Users\Jaden\Documents\Visual Studio 2017\Projects\Tweetect\Tweetect\obj\Debug\netcoreapp2.0\Tweetect.dll
+C:\Users\Jaden\Documents\Visual Studio 2017\Projects\Tweetect\Tweetect\obj\Debug\netcoreapp2.0\Tweetect.pdb
