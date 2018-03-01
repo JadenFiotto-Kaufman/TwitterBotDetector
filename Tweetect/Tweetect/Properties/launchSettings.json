@@ -19,7 +19,7 @@
     "Tweetect": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/values",
+      "launchUrl": "api/V1/test",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },

@@ -11,15 +11,106 @@
     max-width: 100%;
     max-height: 100%
 }
+#tweetect-tweet-dialog input[type=text]{
+	box-shadow: 0 0 0 1px #A4D9F9;
+	border-color: grey;
+
+	border:1px solid #e6ecf0;
+	padding: 8px 32px 8px 12px;
+}
+#tweetect-tweet-dialog input[type=text]:focus{
+	border:2px solid #A4D9F9;
+}
+#tweetect-tweet-dialog{
+	color:black;
+	font-family: "Segoe UI",Arial,sans-serif"
+}
 .tweetect-searching{
     text-align: center
 }
 .tweetect-report{
     margin-top: 14px;
 }
+.tweetect-evalbutton{
+	padding-top:16px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width:100%;
+}
+.tweetect-filtering{
+	display:flex;
+	flex-direction: column;
+}
+.tweetect-filtering input{
+	border-radius: 21px;
+	height:17px;
+}
+.tweetect-hashtags{
+	overflow-y:auto;
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-top:6px;
+	height:150px;
+	border-radius: 8px;
+	box-shadow: 0 0 0 1px #A4D9F9;
+	border-color: #A4D9F9;
+	border:1px solid #e6ecf0;
+	padding: 8px 32px 8px 12px;
+}
 
+.tweetect-filtering button{
+	
+	background-color: #4AB3F4;
+	border-color:transparent;
+	border:1px solid #1da1f2;
+	color:#fff;
+	border-radius: 100px;
+	font-weight: bold;
+	padding:6px 16px;
+	white-space: nowrap;
+	
 
+}
+.tweetect-enterfilter div{
+	top: 5px;
+    position: relative;
+	font-size: 16px;
+	font-weight: bold;
+	display:inline-block;
+}
+.tweetect-enterfilter{
+	
+	height:44px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
 
+.tweetect-reportoutput{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.tweetect-featureset{
+	display: flex;
+	flex-direction: column;
+}
+.tweetect-features{
+	display: flex;
+	flex-direction: column;
+}
+.tweetect-feature{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height:auto;
+	width:110px;
+}
+.tweetect-feature .tweetect-percent{
+	font-weight: bold;
+}
 
 /*Loader*/
 #fountainG{
