@@ -12,7 +12,7 @@ using Microsoft.Extensions.Options;
 
 namespace Tweetect
 {
-    public class  Startup
+    public class Startup
     {
         public Startup(IConfiguration configuration)
         {
@@ -24,6 +24,11 @@ namespace Tweetect
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDistributedMemoryCache();
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromDays(7);//You can set Time   
+            });
             services.AddMvc();
         }
 
@@ -34,6 +39,7 @@ namespace Tweetect
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseSession();
             app.UseMvc();
         }
     }

@@ -1,5 +1,5 @@
-C:\Users\Jaden\Documents\Visual Studio 2017\Projects\Tweetect\Tweetect
+C:\Users\Jaden\Comfy\Local\TwitterBotDetector\Tweetect\Tweetect
 --output-path=obj\Any CPU\Release\netcoreapp2.0\
 --application-name=Tweetect
---content-root=C:\Users\Jaden\Documents\Visual Studio 2017\Projects\Tweetect\Tweetect
---file=
+--content-root=C:\Users\Jaden\Comfy\Local\TwitterBotDetector\Tweetect\Tweetect
+--file=C:\Users\Jaden\Comfy\Local\TwitterBotDetector\Tweetect\Tweetect\Views\Shared\Auth.cshtml

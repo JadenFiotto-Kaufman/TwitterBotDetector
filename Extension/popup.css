@@ -1,0 +1,32 @@
+#pmain{
+    display:flex;
+    flex-direction: column;
+    height: 500px;
+    width:150px;
+    overflow-y: auto;
+}
+.popupname{
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.popupitem{
+	justify-content:space-between;
+	height:auto;
+    display:flex;
+    flex-direction: row;
+    max-height: 20px;
+    width:150px;
+}
+.orangeBox {
+    background: #1da1f2;
+    color: #fff;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }

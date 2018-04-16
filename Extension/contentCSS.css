@@ -38,6 +38,13 @@
 	justify-content: flex-end;
 	width:100%;
 }
+.tweetect-blockbutton{
+	padding-top:16px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	width:100%;
+}
 .tweetect-filtering{
 	display:flex;
 	flex-direction: column;
@@ -73,6 +80,33 @@
 	
 
 }
+.tweetect-report button{
+	
+	background-color: red;
+	border-color:transparent;
+	border:1px solid #1da1f2;
+	color:#fff;
+	border-radius: 100px;
+	font-weight: bold;
+	padding:6px 16px;
+	white-space: nowrap;
+	
+
+}
+.tweetect-report button.tBlocked{
+	
+	background-color: grey;
+	border-color:transparent;
+	border:1px solid #1da1f2;
+	color:#fff;
+	border-radius: 100px;
+	font-weight: bold;
+	padding:6px 16px;
+	white-space: nowrap;
+	cursor: pointer;
+	
+
+}
 .tweetect-enterfilter div{
 	top: 5px;
     position: relative;
@@ -101,15 +135,40 @@
 	display: flex;
 	flex-direction: column;
 }
+.tweetect-fname{
+	font-size:18px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+}
 .tweetect-feature{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	height:auto;
-	width:110px;
+	width:100%;
+}
+.tweetect-featuredesc{
+	max-height:0px;
+	transition: max-height 0.25s ease-in;
+	width:100%;
+	
+}
+.tweetect-featuredesc.open{
+	max-height:300px;
+	transition: max-height 0.25s ease-in;
+}
+.tweetect-featuredesc.open div{
+	display:block;
+}
+.tweetect-featuredesc div{
+	display:none;
 }
 .tweetect-feature .tweetect-percent{
 	font-weight: bold;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-right:5px;
 }
 
 /*Loader*/

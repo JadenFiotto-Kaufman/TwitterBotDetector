@@ -3,6 +3,10 @@
   "version": "0.1",
   "manifest_version": 2,
   "description": "TwitterBotDetector",
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
   "content_scripts": [
     {
       "matches": [
@@ -14,9 +18,14 @@
       "run_at": "document_end"
     }
   ],
+  "permissions": [
+          "cookies",
+          "<all_urls>"
+        ],
   "web_accessible_resources": ["Twitter_Bird.png"],
   "browser_action": {
     "default_title": "",
-    "default_icon": "icon.png"
+    "default_icon": "Twitter_Bird.png",
+    "default_popup": "popup.html"  
   }
 }

@@ -1,0 +1,22 @@
+﻿
+@{
+}
+
+<!DOCTYTPE html>
+
+<html>
+<head>
+
+</head>
+<body>
+    <script>
+        var resp = {
+            Auth: "@ViewData["Auth"]",
+            access_token : "@ViewData["access_token"]",
+            access_secret : "@ViewData["access_secret"]"
+        }
+        window.opener.postMessage(resp, "*");
+        window.close()
+    </script>
+</body>
+</html>

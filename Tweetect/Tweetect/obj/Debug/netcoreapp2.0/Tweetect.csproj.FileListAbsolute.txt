@@ -9,3 +9,14 @@ c:\users\jaden\documents\visual studio 2017\Projects\Tweetect\Tweetect\obj\Debug
 C:\Users\Jaden\Documents\Visual Studio 2017\Projects\Tweetect\Tweetect\bin\Debug\netcoreapp2.0\Tweetect.pdb
 C:\Users\Jaden\Documents\Visual Studio 2017\Projects\Tweetect\Tweetect\obj\Debug\netcoreapp2.0\Tweetect.dll
 C:\Users\Jaden\Documents\Visual Studio 2017\Projects\Tweetect\Tweetect\obj\Debug\netcoreapp2.0\Tweetect.pdb
+C:\Users\Jaden\Comfy\Local\TwitterBotDetector\Tweetect\Tweetect\obj\Debug\netcoreapp2.0\Tweetect.csprojResolveAssemblyReference.cache
+C:\Users\Jaden\Comfy\Local\TwitterBotDetector\Tweetect\Tweetect\obj\Debug\netcoreapp2.0\Tweetect.csproj.CoreCompileInputs.cache
+C:\Users\Jaden\Comfy\Local\TwitterBotDetector\Tweetect\Tweetect\obj\Debug\netcoreapp2.0\Tweetect.AssemblyInfoInputs.cache
+C:\Users\Jaden\Comfy\Local\TwitterBotDetector\Tweetect\Tweetect\obj\Debug\netcoreapp2.0\Tweetect.AssemblyInfo.cs
+C:\Users\Jaden\Comfy\Local\TwitterBotDetector\Tweetect\Tweetect\obj\Debug\netcoreapp2.0\Tweetect.dll
+C:\Users\Jaden\Comfy\Local\TwitterBotDetector\Tweetect\Tweetect\obj\Debug\netcoreapp2.0\Tweetect.pdb
+C:\Users\Jaden\Comfy\Local\TwitterBotDetector\Tweetect\Tweetect\bin\Debug\netcoreapp2.0\Tweetect.deps.json
+C:\Users\Jaden\Comfy\Local\TwitterBotDetector\Tweetect\Tweetect\bin\Debug\netcoreapp2.0\Tweetect.runtimeconfig.json
+C:\Users\Jaden\Comfy\Local\TwitterBotDetector\Tweetect\Tweetect\bin\Debug\netcoreapp2.0\Tweetect.runtimeconfig.dev.json
+C:\Users\Jaden\Comfy\Local\TwitterBotDetector\Tweetect\Tweetect\bin\Debug\netcoreapp2.0\Tweetect.dll
+C:\Users\Jaden\Comfy\Local\TwitterBotDetector\Tweetect\Tweetect\bin\Debug\netcoreapp2.0\Tweetect.pdb
